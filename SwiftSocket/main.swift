@@ -30,9 +30,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 import Darwin.C
 
-func testudpclient(){
+func testudpclient() {
     print("testudpclient")
-    let client:UDPClient=UDPClient(addr: "localhost", port: 8080)
+    let client = UDPClient(addr: "localhost", port: 8080)
     print("send hello world")
     client.send(str: "hello world")
     client.close()
@@ -42,8 +42,8 @@ func testudpBroadcastserver(){
     print("testudpBroadcastserver")
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), { () -> Void in
         //turn the server to broadcast mode with the address 255.255.255.255 or empty string
-        let server:UDPServer=UDPServer(addr:"",port:8080)
-        let run:Bool=true
+        let server = UDPServer(addr:"",port:8080)
+        let run = true
         print("server.started")
         while run{
             let (data,remoteip,remoteport)=server.recv(1024)
@@ -63,10 +63,10 @@ func testudpBroadcastclient(){
     //wait a few second till server will ready
     sleep(2)
     print("Broadcastclient.send...")
-    let clientB:UDPClient = UDPClient(addr: "255.255.255.255", port: 8080)
-    clientB.enableBroadcast()
-    clientB.send(str: "test hello from broadcast")
-    clientB.close()
+    let client = UDPClient(addr: "255.255.255.255", port: 8080)
+    client.enableBroadcast()
+    client.send(str: "test hello from broadcast")
+    client.close()
 }
 
 testudpBroadcastserver()

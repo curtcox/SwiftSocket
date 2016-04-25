@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DDD82B41CCDA1B80053F515 /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD82B31CCDA1B80053F515 /* UDPServer.swift */; };
+		4DDD82B51CCDA1B80053F515 /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD82B31CCDA1B80053F515 /* UDPServer.swift */; };
+		4DDD82B61CCDA1B80053F515 /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD82B31CCDA1B80053F515 /* UDPServer.swift */; };
 		55A676E319A5FFCF00663380 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A676E019A5FFCF00663380 /* main.swift */; };
 		D430837D1A565F29004DE4D4 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43083781A565EBF004DE4D4 /* ysocket.swift */; };
 		D43083801A565F29004DE4D4 /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D430837B1A565EBF004DE4D4 /* yudpsocket.c */; };
@@ -34,6 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4DDD82B31CCDA1B80053F515 /* UDPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPServer.swift; sourceTree = "<group>"; };
 		5518C82F19A329100049DC22 /* SwiftSocket */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftSocket; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A676E019A5FFCF00663380 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = SwiftSocket/main.swift; sourceTree = SOURCE_ROOT; };
 		D43083781A565EBF004DE4D4 /* ysocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				D43083781A565EBF004DE4D4 /* ysocket.swift */,
 				D430837B1A565EBF004DE4D4 /* yudpsocket.c */,
 				D430837C1A565EBF004DE4D4 /* yudpsocket.swift */,
+				4DDD82B31CCDA1B80053F515 /* UDPServer.swift */,
 			);
 			name = ysocket;
 			path = SwiftSocket/ysocket;
@@ -289,6 +294,7 @@
 				D43083801A565F29004DE4D4 /* yudpsocket.c in Sources */,
 				D43083811A565F29004DE4D4 /* yudpsocket.swift in Sources */,
 				55A676E319A5FFCF00663380 /* main.swift in Sources */,
+				4DDD82B41CCDA1B80053F515 /* UDPServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 			files = (
 				D43083A01A565F9F004DE4D4 /* ysocket.swift in Sources */,
 				D43083A31A565F9F004DE4D4 /* yudpsocket.c in Sources */,
+				4DDD82B51CCDA1B80053F515 /* UDPServer.swift in Sources */,
 				D43083A41A565F9F004DE4D4 /* yudpsocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +315,7 @@
 			files = (
 				D4F0E41E1A56613C0085C247 /* ysocket.swift in Sources */,
 				D4F0E4211A56613C0085C247 /* yudpsocket.c in Sources */,
+				4DDD82B61CCDA1B80053F515 /* UDPServer.swift in Sources */,
 				D4F0E4221A56613C0085C247 /* yudpsocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
